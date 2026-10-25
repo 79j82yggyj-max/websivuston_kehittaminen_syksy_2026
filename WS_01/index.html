@@ -2,148 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JIMBO - My First HTML Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            position: relative;
-            isolation: isolate;
-            margin: 0;
-            padding: 20px;
-            font-family: "Inter", Arial, sans-serif;
-            color: white;
-            background-color: #111;
-        }
-
-        main {
-            max-width: 760px;
-            margin: 20px auto;
-            padding: 30px;
-            background-color: rgba(10, 10, 20, 0.85);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 12px;
-        }
-
-        .logo {
-            float: right;
-            width: 100px;
-            height: auto;
-            margin: 0 0 12px 15px;
-        }
-
-        .portrait {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        h1, h2 {
-            color: #c7b5ff;
-        }
-
-        h2 {
-            margin-top: 32px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        p, li {
-            line-height: 1.6;
-        }
-
-        a {
-            color: #9ee7ff;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            padding: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            text-align: left;
-        }
-
-        input, button {
-            padding: 8px;
-            font: inherit;
-            border-radius: 4px;
-        }
-
-        button {
-            color: white;
-            background-color: #6045a8;
-            border: none;
-        }
-
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            z-index: -1;
-            pointer-events: none;
-            background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-                url("original_b75660357facad624e575ee7ba81afe2.gif") center / cover no-repeat;
-        }
-    </style>
+    <title>My First HTML Page</title>
 </head>
 <body>
-    <main>
-        <img class="logo" src="/WS_01/ascii-words-jimbo-plasma-indigo.gif" alt="JIMBO logo">
-        <h1>Welcome to my page!</h1>
-        <p>My name is Jimi Salmela or JIMBO and I make music.</p>
-        <img class="portrait" src="IMG_9265%202.JPG" alt="A photo of me" width="300">
+    <h1>Jimi Salmela</h1>
+    <p>Hi! My name is Jimi, and I make music. I am also learning web development.</p>
+    <img src="IMG_9265%202.JPG" alt="A photo of me" width="300">
 
-        <h2>My hobbies</h2>
-        <ul>
-            <li>Making music</li>
-            <li>Overall creativity - Photoshop, After Effects</li>
-            <li>Learning about web development</li>
-        </ul>
+    <h2>My hobbies</h2>
+    <ul>
+        <li>Making music</li>
+        <li>Creating things with Photoshop and After Effects</li>
+        <li>Learning about web development</li>
+    </ul>
 
-        <h2>My current university</h2>
-        <p><a href="https://www.laurea.fi">Visit Laurea</a></p>
+    <h2>My favourite website</h2>
+    <p><a href="https://www.laurea.fi">Visit Laurea</a></p>
 
-        <h2>My courses</h2>
-        <table>
-            <tr>
-                <th>Course</th>
-                <th>Topic</th>
-            </tr>
-            <tr>
-                <td>HTML</td>
-                <td>Web pages</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>Page styling</td>
-            </tr>
-            <tr>
-                <td>Web development</td>
-                <td>Websites</td>
-            </tr>
-        </table>
+    <h2>My courses</h2>
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Topic</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Web pages</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Page styling</td>
+        </tr>
+        <tr>
+            <td>Web development</td>
+            <td>Websites</td>
+        </tr>
+    </table>
 
-        <h2>My music</h2>
-        <ol>
-            <li><a href="/WS_01/AMBIVALENCY 130 BMIN JIMBO.mp3">AMBIVALENCY 130 BMIN JIMBO</a></li>
-            <li><a href="/WS_01/GAMECHANGER 122 BMIN JIMBO.mp3">GAMECHANGER 122 BMIN JIMBO</a></li>
-            <li><a href="/WS_01/SAILING 135 OTS + JIMBO.mp3">SAILING 135 OTS + JIMBO</a></li>
-        </ol>
-
-        <h2>Contact form</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
-            <button type="submit">Submit</button>
-        </form>
-    </main>
+    <h2>Contact form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
