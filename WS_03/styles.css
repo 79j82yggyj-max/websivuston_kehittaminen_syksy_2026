@@ -1,0 +1,261 @@
+/* Simple and colorful website styling */
+
+body {
+    background-color: #dbeafe;
+    background-image:
+        linear-gradient(rgba(219, 234, 254, 0.20), rgba(219, 234, 254, 0.20)),
+        url("original_b75660357facad624e575ee7ba81afe2.gif");
+    background-attachment: fixed;
+    background-size: cover;
+    color: #172554;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 25px 15px;
+}
+
+.page-content {
+    margin: auto;
+    max-width: 800px;
+}
+
+.corner-gif {
+    border: 3px solid #1d4ed8;
+    border-radius: 50%;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    width: 90px;
+}
+
+.hero {
+    background-color: #ffffff;
+    border: 3px solid #1d4ed8;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    padding: 25px;
+    text-align: center;
+}
+
+.eyebrow {
+    color: #db2777;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+h1 {
+    color: #1d4ed8;
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+h2 {
+    color: #be185d;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.intro {
+    margin-bottom: 0;
+}
+
+.cat-gallery,
+.content-box,
+form,
+table,
+.quote {
+    background-color: #ffffff;
+    border: 2px solid #60a5fa;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.cat-gallery {
+    margin-top: 25px;
+}
+
+.cat-gallery h2 {
+    margin-top: 0;
+}
+
+.cat-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cat-images img,
+.filter-image {
+    border: 3px solid #f59e0b;
+    border-radius: 10px;
+    height: 230px;
+    object-fit: cover;
+    width: 230px;
+}
+
+.cat-images img:hover {
+    border-color: #db2777;
+}
+
+.content-box {
+    margin-top: 25px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+a {
+    color: #1d4ed8;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #db2777;
+}
+
+table {
+    border-collapse: collapse;
+    padding: 0;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #93c5fd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #bfdbfe;
+}
+
+tr:nth-child(even) {
+    background-color: #eff6ff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 1px solid #93c5fd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 8px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 2px solid #db2777;
+    outline: none;
+}
+
+input[type="submit"],
+.transition-button {
+    background-color: #1d4ed8;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #db2777;
+}
+
+/* CSS transition */
+.transition-button {
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.transition-button:hover {
+    background-color: #db2777;
+}
+
+/* CSS animation */
+.animation-box {
+    animation: move 2s infinite alternate;
+    background-color: #f59e0b;
+    border: 3px solid #be185d;
+    height: 50px;
+    position: relative;
+    width: 50px;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100px;
+    }
+}
+
+/* CSS pseudo-classes */
+.pseudo-list li:nth-child(odd) {
+    background-color: #fce7f3;
+}
+
+.pseudo-list li:nth-child(even) {
+    background-color: #dbeafe;
+}
+
+/* CSS filter */
+.filter-image {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.filter-image:hover {
+    filter: grayscale(0%);
+}
+
+/* CSS pseudo-element */
+.quote {
+    font-style: italic;
+    padding-left: 35px;
+    position: relative;
+}
+
+.quote::before {
+    color: #db2777;
+    content: "“";
+    font-size: 35px;
+    left: 10px;
+    position: absolute;
+    top: 5px;
+}
+
+@media (max-width: 600px) {
+    .corner-gif {
+        width: 65px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .cat-images img,
+    .filter-image {
+        height: 200px;
+        width: 200px;
+    }
+}
