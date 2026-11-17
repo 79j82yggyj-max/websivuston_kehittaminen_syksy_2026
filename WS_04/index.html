@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimi's Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="jimbo_obsidian.gif" alt="" class="corner-gif">
+
+    <header class="hero">
+        <p class="eyebrow">WELCOME TO MY WEBSITE</p>
+        <h1>Jimi Salmela</h1>
+        <p class="intro">Hi! My name is Jimi, and I make music. I am also learning web development.</p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#layout">Layout examples</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+    <section id="about" class="cat-gallery">
+        <h2>My cats</h2>
+        <div class="cat-images">
+            <img src="IMG_9452.JPG" alt="One of Jimi's cats">
+            <img src="IMG_7899.JPG" alt="Another one of Jimi's cats">
+        </div>
+    </section>
+
+    <section id="hobbies" class="content-box">
+        <h2>My hobbies</h2>
+        <ul>
+            <li>Making music</li>
+            <li>Creating things with Photoshop and After Effects</li>
+            <li>Learning about web development</li>
+        </ul>
+    </section>
+
+    <h2>My favourite website</h2>
+    <p><a href="https://www.laurea.fi">Visit Laurea</a></p>
+
+    <h2>My courses</h2>
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Topic</th>
+        </tr>
+        <tr>
+            <td>Professional Communication in English</td>
+            <td>English communication</td>
+        </tr>
+        <tr>
+            <td>Business Environments</td>
+            <td>Business</td>
+        </tr>
+        <tr>
+            <td>Webpage Development</td>
+            <td>Websites</td>
+        </tr>
+    </table>
+
+    <section id="layout">
+        <h2>Grid layout</h2>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+
+        <h2>Flexbox layout</h2>
+        <div class="flex-container">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+
+        <h2>Responsive box</h2>
+        <div class="responsive-box">Resize the window to see the effect</div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <h2>CSS transitions</h2>
+    <button class="transition-button">Hover me</button>
+
+    <h2>CSS animations</h2>
+    <div class="animation-box"></div>
+
+    <h2>CSS pseudo-classes</h2>
+    <ul class="pseudo-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <h2>CSS filters</h2>
+    <img src="IMG_9452.JPG" alt="Sample image of a cat" class="filter-image">
+
+    <h2>CSS pseudo-elements</h2>
+    <blockquote class="quote">
+        The little things we create can become something meaningful.
+    </blockquote>
+    </main>
+
+    <footer>
+        <p>Copyright 2025</p>
+    </footer>
+</body>
+</html>
