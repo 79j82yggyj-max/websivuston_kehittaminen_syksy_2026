@@ -3,130 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jimi's Website</title>
+    <meta name="description" content="JIMBO — producer, sound designer and visual artist.">
+    <title>JIMBO / Independent Producer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="jimbo_obsidian.gif" alt="" class="corner-gif">
+    <canvas id="signal-canvas" aria-hidden="true"></canvas>
 
-    <header class="hero">
-        <p class="eyebrow">WELCOME TO MY WEBSITE</p>
-        <h1>Jimi Salmela</h1>
-        <p class="intro">Hi! My name is Jimi, and I make music. I am also learning web development.</p>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#layout">Layout examples</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header class="masthead">
+        <a class="wordmark" href="#top" aria-label="JIMBO home">
+            JIMBO<span>®</span>
+        </a>
+        <p class="descriptor">Producer /<br>Sound &amp; visual</p>
+        <nav aria-label="Primary navigation">
+            <a href="#catalog">Catalog</a>
+            <a href="#profile">Profile</a>
+            <a href="#contact">Contact</a>
         </nav>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span>
+        </button>
     </header>
 
-    <main class="page-content">
-    <section id="about" class="cat-gallery">
-        <h2>My cats</h2>
-        <div class="cat-images">
-            <img src="IMG_9452.JPG" alt="One of Jimi's cats">
-            <img src="IMG_7899.JPG" alt="Another one of Jimi's cats">
-        </div>
-    </section>
+    <main id="top">
+        <section class="intro">
+            <div class="intro-kicker reveal">
+                <span>Independent archive</span>
+                <span>Helsinki / Finland</span>
+            </div>
 
-    <section id="hobbies" class="content-box">
-        <h2>My hobbies</h2>
-        <ul>
-            <li>Making music</li>
-            <li>Creating things with Photoshop and After Effects</li>
-            <li>Learning about web development</li>
-        </ul>
-    </section>
+            <h1 class="intro-title reveal">
+                <span>Raw</span>
+                <em>frequency.</em>
+            </h1>
 
-    <h2>My favourite website</h2>
-    <p><a href="https://www.laurea.fi">Visit Laurea</a></p>
+            <div class="intro-bottom reveal">
+                <p>Beats with pressure,<br>texture and intent.</p>
+                <div class="intro-stamp" aria-hidden="true">
+                    <svg viewBox="0 0 120 120">
+                        <defs>
+                            <path id="stampPath" d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/>
+                        </defs>
+                        <text>
+                            <textPath href="#stampPath">JIMBO / SOUND ARCHIVE / EST. 2026 / </textPath>
+                        </text>
+                    </svg>
+                    <span>J</span>
+                </div>
+            </div>
+        </section>
 
-    <h2>My courses</h2>
-    <table>
-        <tr>
-            <th>Course</th>
-            <th>Topic</th>
-        </tr>
-        <tr>
-            <td>Professional Communication in English</td>
-            <td>English communication</td>
-        </tr>
-        <tr>
-            <td>Business Environments</td>
-            <td>Business</td>
-        </tr>
-        <tr>
-            <td>Webpage Development</td>
-            <td>Websites</td>
-        </tr>
-    </table>
+        <section class="manifesto" id="profile">
+            <p class="manifesto-index reveal">001 — Statement</p>
+            <blockquote class="reveal">
+                "I build records that feel physical:
+                <span>heavy in the chest,</span>
+                clear in the memory."
+            </blockquote>
+            <div class="manifesto-meta reveal">
+                <p>Producer / Composer</p>
+                <p>Available worldwide</p>
+            </div>
+        </section>
 
-    <section id="layout">
-        <h2>Grid layout</h2>
-        <div class="grid-container">
-            <div class="grid-item">1</div>
-            <div class="grid-item">2</div>
-            <div class="grid-item">3</div>
-            <div class="grid-item">4</div>
-            <div class="grid-item">5</div>
-            <div class="grid-item">6</div>
-        </div>
+        <section class="catalog" id="catalog">
+            <header class="catalog-heading reveal">
+                <p>002 — Selected frequency</p>
+                <h2>Beat catalog</h2>
+                <p>03 recordings</p>
+            </header>
 
-        <h2>Flexbox layout</h2>
-        <div class="flex-container">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
-        </div>
+            <article class="record record-one reveal" id="track-1">
+                <button class="record-cover" type="button" data-track="track-1" aria-label="Play Deep Breaths">
+                    <span class="cover-code">JB–001</span>
+                    <span class="cover-title">DEEP<br>BREATHS</span>
+                    <span class="cover-spec">122 BPM / C MIN</span>
+                    <span class="record-control">
+                        <svg class="play-icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M15 9l18 11-18 11z"/></svg>
+                        <svg class="pause-icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M12 9h6v22h-6zm10 0h6v22h-6z"/></svg>
+                    </span>
+                </button>
 
-        <h2>Responsive box</h2>
-        <div class="responsive-box">Resize the window to see the effect</div>
-    </section>
+                <div class="record-info">
+                    <div>
+                        <p class="record-credit">VAGOSROSE × JIMBO</p>
+                        <h3>Deep Breaths</h3>
+                    </div>
+                    <div class="record-details">
+                        <span>C Minor</span>
+                        <span>122 BPM</span>
+                        <span class="duration">02:48</span>
+                    </div>
+                    <audio preload="metadata" src="DEEP BREATHS 122 CMIN VAGOSROSE + JIMBO.mp3"></audio>
+                </div>
+            </article>
 
-    <section id="contact">
-        <h2>Contact form</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+            <article class="record record-two reveal" id="track-2">
+                <button class="record-cover" type="button" data-track="track-2" aria-label="Play Submit It">
+                    <span class="cover-code">JB–002</span>
+                    <span class="cover-title">SUBMIT<br>IT</span>
+                    <span class="cover-spec">133 BPM</span>
+                    <span class="record-control">
+                        <svg class="play-icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M15 9l18 11-18 11z"/></svg>
+                        <svg class="pause-icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M12 9h6v22h-6zm10 0h6v22h-6z"/></svg>
+                    </span>
+                </button>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+                <div class="record-info">
+                    <div>
+                        <p class="record-credit">2WENTYONE × KB × JIMBO</p>
+                        <h3>Submit It</h3>
+                    </div>
+                    <div class="record-details">
+                        <span>Direct mix</span>
+                        <span>133 BPM</span>
+                        <span class="duration">02:36</span>
+                    </div>
+                    <audio preload="metadata" src="SUBMIT IT 133 2WENTYONE + KB + JIMBO.mp3"></audio>
+                </div>
+            </article>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4"></textarea>
+            <article class="record record-three reveal" id="track-3">
+                <button class="record-cover" type="button" data-track="track-3" aria-label="Play Dismiss Him">
+                    <span class="cover-code">JB–003</span>
+                    <span class="cover-title">DISMISS<br>HIM</span>
+                    <span class="cover-spec">124 BPM</span>
+                    <span class="record-control">
+                        <svg class="play-icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M15 9l18 11-18 11z"/></svg>
+                        <svg class="pause-icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M12 9h6v22h-6zm10 0h6v22h-6z"/></svg>
+                    </span>
+                </button>
 
-            <input type="submit" value="Submit">
-        </form>
-    </section>
+                <div class="record-info">
+                    <div>
+                        <p class="record-credit">2WENTYONE × RIZZO × JIMBO</p>
+                        <h3>Dismiss Him</h3>
+                    </div>
+                    <div class="record-details">
+                        <span>Dark pulse</span>
+                        <span>124 BPM</span>
+                        <span class="duration">02:42</span>
+                    </div>
+                    <audio preload="metadata" src="DISMISS HIM 124 2WENTYONE + RIZZO + jIMBO.mp3"></audio>
+                </div>
+            </article>
+        </section>
 
-    <h2>CSS transitions</h2>
-    <button class="transition-button">Hover me</button>
-
-    <h2>CSS animations</h2>
-    <div class="animation-box"></div>
-
-    <h2>CSS pseudo-classes</h2>
-    <ul class="pseudo-list">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-    </ul>
-
-    <h2>CSS filters</h2>
-    <img src="IMG_9452.JPG" alt="Sample image of a cat" class="filter-image">
-
-    <h2>CSS pseudo-elements</h2>
-    <blockquote class="quote">
-        The little things we create can become something meaningful.
-    </blockquote>
+        <section class="contact" id="contact">
+            <p class="reveal">003 — Contact</p>
+            <a class="contact-link reveal" href="mailto:hello@jimbo.studio">
+                <span>Have a vision?</span>
+                <em>Let's give it sound.</em>
+                <svg viewBox="0 0 80 80" aria-hidden="true">
+                    <path d="M12 68L68 12M28 12h40v40"/>
+                </svg>
+            </a>
+        </section>
     </main>
 
     <footer>
-        <p>Copyright 2025</p>
+        <a class="wordmark" href="#top">JIMBO<span>®</span></a>
+        <div class="footer-links">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+            <a href="mailto:hello@jimbo.studio">Email</a>
+        </div>
+        <p>© 2026 / All rights reserved</p>
     </footer>
+
+    <div class="player-bar" aria-label="Active audio player">
+        <button class="player-toggle" type="button" aria-label="Pause track">
+            <svg class="play-icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M15 9l18 11-18 11z"/></svg>
+            <svg class="pause-icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M12 9h6v22h-6zm10 0h6v22h-6z"/></svg>
+        </button>
+        <div class="player-name">
+            <span>Now selected</span>
+            <strong>Choose a record</strong>
+        </div>
+        <div class="player-progress"><span></span></div>
+        <span class="player-time">00:00</span>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

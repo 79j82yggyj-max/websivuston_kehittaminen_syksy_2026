@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimi's Responsive Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="jimbo_obsidian.gif" alt="" class="corner-gif">
+
+    <nav class="responsive-nav" aria-label="Main navigation">
+        <h1>Jimi's Website</h1>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+            ☰ Menu
+        </button>
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="home">
+        <header class="hero">
+            <p class="eyebrow">WELCOME TO MY WEBSITE</p>
+            <h1>Jimi Salmela</h1>
+            <p class="intro">Hi! My name is Jimi, and I make music. I am also learning web development.</p>
+
+            <div class="music-player">
+                <button class="music-button" type="button" aria-label="Play background music">
+                    ▶ Play music
+                </button>
+                <span class="song-name">PRENDE LA LUZ 86 1THERMO + JIMBO.mp3</span>
+                <label for="volume">
+                    Volume
+                    <input id="volume" type="range" min="0" max="100" value="25">
+                </label>
+                <span class="volume-value">25%</span>
+            </div>
+        </header>
+
+        <section class="responsive-section">
+            <h2>What I do</h2>
+            <p>My main interests are shown below.</p>
+
+            <div class="responsive-container">
+                <div class="column">
+                    <h3>Music</h3>
+                    <p>I make music and enjoy working with sound.</p>
+                </div>
+                <div class="column">
+                    <h3>Creative work</h3>
+                    <p>I use Photoshop and After Effects to create different projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cat-gallery" id="about">
+            <h2>My cats</h2>
+            <div class="cat-images">
+                <img src="IMG_9452.JPG" alt="One of Jimi's cats" class="responsive-image">
+                <img src="IMG_7899.JPG" alt="Another one of Jimi's cats" class="responsive-image">
+            </div>
+        </section>
+
+        <div class="content-box">
+            <h2>My hobbies</h2>
+            <ul>
+                <li>Making music</li>
+                <li>Creating things with Photoshop and After Effects</li>
+                <li>Learning about web development</li>
+            </ul>
+        </div>
+
+        <h2>My favourite website</h2>
+        <p><a href="https://www.laurea.fi">Visit Laurea</a></p>
+
+        <h2>My courses</h2>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Topic</th>
+            </tr>
+            <tr>
+                <td>Professional Communication in English</td>
+                <td>English communication</td>
+            </tr>
+            <tr>
+                <td>Business Environments</td>
+                <td>Business</td>
+            </tr>
+            <tr>
+                <td>Webpage Development</td>
+                <td>Websites</td>
+            </tr>
+        </table>
+
+        <h2>Contact form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <h2>CSS transitions</h2>
+        <button class="transition-button">Hover me</button>
+
+        <h2>CSS animations</h2>
+        <div class="animation-box"></div>
+
+        <h2>CSS pseudo-classes</h2>
+        <ul class="pseudo-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+
+        <h2>CSS filters</h2>
+        <img src="IMG_9452.JPG" alt="Sample image of a cat" class="filter-image">
+
+        <h2>CSS pseudo-elements</h2>
+        <blockquote class="quote">
+            This is the bottom of the page, where I can edit my quote using a CSS pseudo-element.
+        </blockquote>
+
+        <div class="media-query-box">
+            Resize the window to see the effect
+        </div>
+    </main>
+
+    <footer id="contact">
+        <p>My first responsive website</p>
+    </footer>
+
+    <audio id="background-song" autoplay loop preload="auto"
+        src="PRENDE LA LUZ 86 1THERMO + JIMBO.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
